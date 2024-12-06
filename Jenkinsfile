@@ -1,7 +1,6 @@
-// Jenkinsfile (Declarative Pipeline)
-/* Requires the Docker Pipeline plugin */
+Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image 'node:20.13.1-alpine3.19' } }
+    agent { docker { image 'node:22.12.0-alpine3.20' } }
     stages {
         stage('build') {
             steps {
